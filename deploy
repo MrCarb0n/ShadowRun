@@ -7,7 +7,7 @@ mkdir -p $WORK_DIR
 setup () {
     local zippath
     zippath="$WORK_DIR/master.zip"
-    curl -L "https://api.github.com/repos/pokurt/Nana-Remix/zipball/$version?access_token=$github_token" > $zippath
+    curl -L "https://api.github.com/repos/MrCarb0n/Nana-Remix/zipball/$version?access_token=$github_token" > $zippath
     unzip -qq "$zippath" -d "$WORK_DIR"
     rm -rf "$zippath"
 }
